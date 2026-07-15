@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Azu Elvis (Mayana)- Developer & Cybersecurity Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Syne:wght@700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Scroll progress indicator -->
+    <div class="scroll-progress" id="scrollProgress"></div>
+
+    <header>
+        <nav>
+            <h1 class="logo">Mayana's Portfolio</h1>
+            <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
+            <ul id="navLinks">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero fade-in">
+        <div class="hero-grid" aria-hidden="true"></div>
+        <div class="hero-avatar">
+            <img src="pfp.jpg" alt="Elvis profile photo" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+            <div class="avatar-fallback">AE</div>
+        </div>
+        <div class="hero-text">
+            <h2>Hello, I'm <span>Mayana</span><span class="typed-cursor"></span></h2>
+            <p class="hero-sub">Application Security Engineer & Python Developer — building secure tools, AI sandboxes, and decentralized systems</p>
+            <div class="hero-btns">
+                <a href="#projects" class="btn btn-primary">View my work</a>
+                <a href="#contact" class="btn btn-outline">Contact me</a>
+            </div>
+        </div>
+        <a href="#about" class="scroll-indicator" aria-label="Scroll down">
+            <span>Scroll</span>
+            <svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"></polyline></svg>
+        </a>
+    </section>
+
+    <section id="about" class="fade-in">
+        <h3>About Me</h3>
+        <p>I am a Cybersecurity Specialist and Python Developer focused on building secure, fast, and highly functional tools. My work spans agentic sandbox environments for evaluating AI models, decentralized application engineering, machine learning systems for data protection, and backend infrastructure that connects rigorous application security with accessible user experiences.</p>
+    </section>
+
+    <section id="skills" class="fade-in">
+        <h3>Skills</h3>
+        <div class="skills-group">
+            <p class="skills-group-label">Languages & Frameworks</p>
+            <ul class="skills-list">
+                <li>Python</li>
+                <li>JavaScript</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>React</li>
+                <li>FastAPI</li>
+                <li>WebSockets</li>
+                <li>Streamlit</li>
+            </ul>
+        </div>
+        <div class="skills-group">
+            <p class="skills-group-label">Machine Learning & Data</p>
+            <ul class="skills-list data">
+                <li>Scikit-learn</li>
+                <li>XGBoost</li>
+                <li>Random Forest</li>
+                <li>Logistic Regression</li>
+                <li>NLP</li>
+                <li>Database Management</li>
+            </ul>
+        </div>
+        <div class="skills-group">
+            <p class="skills-group-label">Security & Forensics</p>
+            <ul class="skills-list sec">
+                <li>AI Prompt Injection Evaluation</li>
+                <li>Application Security</li>
+                <li>Wireshark & Traceroute</li>
+                <li>Autopsy & FTK Imager</li>
+                <li>Encryption Algorithms</li>
+                <li>PII Redaction & Data Masking</li>
+            </ul>
+        </div>
+        <div class="skills-group">
+            <p class="skills-group-label">Blockchain & Architecture</p>
+            <ul class="skills-list chain">
+                <li>TON Blockchain</li>
+                <li>STON.Fi API</li>
+                <li>Agentic Sandbox Environments</li>
+                <li>Base62 Encoding</li>
+                <li>dApp Backend Architecture</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="projects" class="fade-in">
+        <h3>Projects</h3>
+        <div class="projects-grid">
+            <div class="project">
+                <h4>SENTINEL-1 (Endpoint Risk Detector)</h4>
+                <p>Developed a cybersecurity endpoint risk detector that utilizes an ensemble machine learning model (XGBoost, Random Forest, and Logistic Regression) to analyze system telemetry. The tool features a custom-built Tkinter UI to predict and visualize vulnerability risks in real-time.</p>
+                <div class="badge-row">
+                    <span class="badge badge-ml">ML</span>
+                    <span class="badge badge-sec">Security</span>
+                    <span class="badge badge-lang">Python</span>
+                </div>
+            </div>
+
+            <div class="project">
+                <h4>GridVet</h4>
+                <p>Designed and built an open-source Agentic Sandbox Production Security Framework with Python and React to evaluate AI models under pressure. The framework tests AI agents against prompt injections and vulnerabilities while heavily utilizing Base62 encoding for secure, efficient data handling.<a href="https://gridvet.netlify.app" target="_blank">View Project →</a></p>
+                <div class="badge-row">
+                    <span class="badge badge-sec">AI Security</span>
+                    <span class="badge badge-lang">React</span>
+                    <span class="badge badge-chain">Base62</span>
+                </div>
+            </div>
+
+            <div class="project">
+                <h4>Nigerian Fintech Bank Statement Categorizer</h4>
+                <p>Built a five-module Python application using pypdf to parse and categorize transactions from Kuda, OPay, and PalmPay PDF statements. It includes automated PII redaction and a Random Forest model for high-accuracy spending insights from normalized logs. <a href="https://github.com/Mxyana/Bank_categoriser_pj" target="_blank">View Project →</a></p>
+                <div class="badge-row">
+                    <span class="badge badge-ml">ML</span>
+                    <span class="badge badge-sec">Privacy</span>
+                    <span class="badge badge-lang">Python</span>
+                </div>
+            </div>
+
+            <div class="project">
+                <h4>Mayana's Trust (Arc Pay)</h4>
+                <p>Developed scalable backend infrastructure for a decentralized payment application on the TON blockchain. Integrated a FastAPI backend with Python WebSockets and STON.fi API v1beta8 to process automated, real-time transaction payloads.  <a href="https://trustmyt.netlify.app/" target="_blank">View Project →</a></p>
+                <div class="badge-row">
+                    <span class="badge badge-chain">TON</span>
+                    <span class="badge badge-lang">FastAPI</span>
+                    <span class="badge badge-chain">STON.fi</span>
+                </div>
+            </div>
+
+            <div class="project">
+                <h4>Upwards Communications Ltd. Website</h4>
+                <p>Single-handedly built and managing a fully functional website for Upwards Communications Ltd. The website features robust form handling with automated email notifications, secure server-side validation, and a custom lead-generation pipeline. <a href="https://upwardscommsltd.netlify.app" target="_blank">View Project →</a></p>
+                <div class="badge-row">
+                    <span class="badge badge-lang">Web</span>
+                    <span class="badge badge-lang">JavaScript</span>
+                </div>
+            </div>
+
+            <div class="project">
+                <h4>Audio to Text Transcription Service</h4>
+                <p>A lightweight application that converts spoken audio into text with speaker diarization. It allows users to label speakers and save transcripts as .txt files via a user-friendly GUI. <a href="https://drive.google.com/file/d/1-bM5EIN-S0Iyci43FM45NotzgQ9mT6Fe/view?usp=drive_link" target="_blank">View Project →</a></p>
+                <div class="badge-row">
+                    <span class="badge badge-lang">Python</span>
+                    <span class="badge badge-ml">NLP</span>
+                </div>
+            </div>
+
+            <div class="project">
+                <h4>Web3 Community & Content Strategy</h4>
+                <p>Acted as a community ambassador and content strategist for Web3 platforms including Trenches, Allswaps, Chatlee, and Perle Labs. Structured a Twitter InfoFi campaign, directed video workflows, wrote scripts, and designed a reward distribution layout for 100 participants.</p>
+                <div class="badge-row">
+                    <span class="badge badge-chain">Web3</span>
+                    <span class="badge badge-lang">Content</span>
+                    <span class="badge badge-sec">Strategy</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="education" class="fade-in">
+        <h3>Education</h3>
+        <div class="education-card">
+            <div class="education-head">
+                <div>
+                    <p class="education-label">Bachelor of Science</p>
+                    <h4>Cybersecurity</h4>
+                </div>
+                <span class="education-date">Expected 2027 · 400 Level</span>
+            </div>
+            <p class="education-school">Claration University of Nigeria</p>
+            <div class="coursework">
+                <p class="skills-group-label">Relevant Coursework</p>
+                <ul class="skills-list edu">
+                    <li>Biometric Security</li>
+                    <li>Big Data Security</li>
+                    <li>Digital Forensics</li>
+                    <li>Investigative Methods</li>
+                    <li>Operating Systems</li>
+                </ul>
+            </div>
+            <p class="education-note">Extracurricular: Participated in the Bitget Trading Infrastructure Hackathon with a team of software engineering peers.</p>
+        </div>
+    </section>
+
+    <section id="contact" class="fade-in">
+        <h3>Contact Info</h3>
+        <p>Email: <a href="mailto:ELVISAZU23@GMAIL.COM">ELVISAZU23@GMAIL.COM</a></p>
+        <p>X: <a href="https://x.com/@AzuElvis" target="_blank">@AzuElvis</a></p>
+        <p>Phone: <a href="tel:+2348126556792">+2348126556792</a></p>
+        <p>Portfolio: <a href="https://devmayana.netlify.app" target="_blank">devmayana.netlify.app</a></p>
+        <p>GitHub: <a href="https://github.com/mxyana" target="_blank">github.com/mxyana</a></p>
+    </section>
+
+    <footer>
+        <p>© 2026 Azu Elvis. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Floating buttons — stacked vertically -->
+    <div class="fab-stack">
+        <button id="themeToggle" aria-label="Toggle dark mode">🌙</button>
+        <button id="contactBtn" aria-label="Quick contact">✉️</button>
+    </div>
+
+    <div id="contactPopup">
+        <h4>Contact Me</h4>
+<p>Email: <a href="mailto:ELVISAZU23@GMAIL.COM">ELVISAZU23@GMAIL.COM</a></p>
+        <p>X: <a href="https://x.com/@AzuElvis" target="_blank">@AzuElvis</a></p>
+        <p>Phone: <a href="tel:+2348126556792">+2348126556792</a></p>
+        <p>GitHub: <a href="https://github.com/mxyana" target="_blank">github.com/mxyana</a></p>
+    </div>
+
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+        // Detect reduced motion preference
+        const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+        // Fade-in on scroll with stagger support
+        const elements = document.querySelectorAll('.fade-in');
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) entry.target.classList.add('visible');
+            });
+        }, { threshold: 0.1 });
+        elements.forEach(el => observer.observe(el));
+
+        // Scroll progress bar
+        const scrollProgress = document.getElementById('scrollProgress');
+        window.addEventListener('scroll', () => {
+            const scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+            const docHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            const scrollPercent = docHeight > 0 ? (scrollTop / docHeight) * 100 : 0;
+            scrollProgress.style.width = scrollPercent + '%';
+        }, { passive: true });
+
+        // Hide scroll indicator after scrolling past hero
+        const scrollIndicator = document.querySelector('.scroll-indicator');
+        if (scrollIndicator) {
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 200) {
+                    scrollIndicator.style.opacity = '0';
+                    scrollIndicator.style.pointerEvents = 'none';
+                } else {
+                    scrollIndicator.style.opacity = '';
+                    scrollIndicator.style.pointerEvents = '';
+                }
+            }, { passive: true });
+        }
+
+        // Contact popup
+        const btn = document.getElementById('contactBtn');
+        const popup = document.getElementById('contactPopup');
+        btn.addEventListener('click', e => {
+            e.stopPropagation();
+            popup.classList.toggle('show');
+        });
+        document.addEventListener('click', e => {
+            if (!popup.contains(e.target) && e.target !== btn) popup.classList.remove('show');
+        });
+
+        // Dark mode toggle
+        const toggleBtn = document.getElementById('themeToggle');
+        const body = document.body;
+
+        if (localStorage.getItem('theme') === 'dark') {
+            body.classList.add('dark-mode');
+            toggleBtn.textContent = '☀️';
+        }
+
+        toggleBtn.addEventListener('click', () => {
+            body.classList.toggle('dark-mode');
+            const isDark = body.classList.contains('dark-mode');
+            toggleBtn.textContent = isDark ? '☀️' : '🌙';
+            localStorage.setItem('theme', isDark ? 'dark' : 'light');
+        });
+
+        // Hamburger menu
+        const hamburger = document.getElementById('hamburger');
+        const navLinks = document.getElementById('navLinks');
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('open');
+            hamburger.classList.toggle('active');
+        });
+        navLinks.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('open');
+                hamburger.classList.remove('active');
+            });
+        });
+    </script>
+</body>
+</html>
